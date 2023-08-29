@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website Design</title>
+    <!-- css file  -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utlits.css">
+    <!-- font awesome cdn  -->
+    <script src="https://kit.fontawesome.com/c3171e834c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- header section start  -->
+    <header>
+        <div class="head-section layout">
+            <div class="nav-bar flex space-between align-center">
+                <div class="logo uppercase f-w-700 letter-spacing2"><span>/Pratham</span><br>Gupta</div>
+                <div class="nav-links">
+                   
+                    <ul class="flex f-w-600">
+                        <li> <a href="#">_Home</a> </li>
+                        <li> <a href="#about-me-sec">_About</a> </li>
+                        <li> <a href="#portfolio-sec">_Project</a> </li>
+                        <li> <a href="#experience-sec">_Experience</a> </li>
+                        <li> <a href="#testimonial-sec">_Skills</a> </li>
+                        <li> <a href="#contact-us-sec">_Contact Us</a> </li>
+                    </ul>
+                </div>
+                
+                <button class="btn hire-me-btn">_Hire_Me</button>
+                <input type="checkbox" name="checkbox" id="click">
+                <label for="click" class="menu-btn" id="menu">
+                    <i class="fa-solid fa-bars"></i>
+                </label>
+            </div>
+            <!-- content  -->
+            <div class="content flex align-center">
+                <!-- left section  -->
+                <div class="left flex2">
+                    <h4 class="uppercase letter-spacing2">I'm <span>Pratham</span> </h4>
+                    <h2 class="my-t-10 uppercase letter-spacing2 f-w-700">Web_Designer</h2>
+                    <p class="my-t-10"> < I am a Software and <span>Web_Developer></span> </p>
+                    
+                    <button type = "button" class="btn btn2 my-t-20" onclick="download_file()">Download CV</button>
+                </div>
+
+                <!-- right section  -->
+                <div class="right flex3">
+                    <div class="wrapper">
+                        <div class="centeredBox"> 
+                            <span id="typewriter" data-array=""></span>
+                            <span class="cursor"></span>
+                        </div>
+                    </div>      
+                </div>
+            </div>
+        </div>
+    </header>        
+    <!-- about section start  -->
+    <section id="about-me-sec"class="about-me-sec">
+        <div class="about-sec layout">
+            <h3 class="uppercase pd-t-30 text-center">About Me</h3>
+            <hr class="w55 my-t-10">
+
+            <div class="about-content flex justify-center align-center">
+                <!-- left side  -->
+                <div class="left flex2">
+                    <h2 class="uppercase letter-spacing2">Machine_Learning_Model_Dev.</h2>
+                    <p class="my-t-10">I am a expert at developing Machine learning models I have done many projects on my own. I am a part time freelancer and I do freelancing in part time.</p>
+
+                    <ul>
+                        <li><span class="f-w-600">Deep Learning/Neural Networks/Data-science</span></li>
+                    </ul>
+
+                    <br><br><br>
+
+
+
+                    <h2 class="uppercase letter-spacing2">full_stack_developer</h2>
+                    <p class="my-t-10">I am a professional web designer and youtuber. I have done many projects for my clients. I am a part time freelancer and I do freelancing in part time.</p>
+
+                    <ul>
+                        <li><span class="f-w-600">HTML/CSS/JavaScript/React.js</span></li>
+                    </ul>
+
+                    <button class="btn my-t-20">Hire Me</button>
+                </div>
+                <!-- right side  -->
+                <div class="right flex3">
+                    <img src="asset/about me img.png" alt="">
+                    <hr>
+
+                    <!-- color used  -->
+                    <div class="dot-color text-center my-t-10">
+                        <h3>color used</h3>
+                        <span class="dot dot-w"></span>
+                        <span class="dot dot-b"></span>
+                        <span class="dot dot-ws"></span>
+                        <span class="dot dot-bs"></span>
+                        <span class="dot dot-a"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- about section end  -->
+
+    <!-- portfolio section start  -->
+    <section id="portfolio-sec"class = "portfolio-sec">
+        <div class="portfolio layout">
+            <h3 class="uppercase text-center pd-30">projects</h3>
+            <div class="portolio-parent flex justify-center align-center text-center">
+                <div class="portfolio-child">
+                    <img src="asset/ML.webp" alt="">
+                    <h3>ML_Song_predictor</h3>
+                    <p>Machine Learning model which predict songs according to our current mood</p>
+                    <button class="btn btn2">Explore More</button>
+                </div>
+
+                <div class="portfolio-child">
+                    <img src="asset/pass_gen.png" alt="">
+                    <h3>pass_generator</h3>
+                    <p>Random Password generator using symbols,number and letters </p>
+                    <button class="btn btn2">Explore More</button>
+                </div>
+
+                <div class="portfolio-child">
+                    <img src="asset/weather.webp" alt="">
+                    <h3>Weather Website</h3>
+                    <p>Weather Website shows weather of your location or desired city</p>
+                    <button class="btn btn2">Explore More</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- portfolio section end  -->
+
+    <!-- experience section start  -->
+    <section id="experience-sec"class="experience-sec">
+        <div class="experience layout">
+            <h3 class="uppercase pd-30 text-center">Skills</h3>
+            <div class="experience-details flex space-between text-center">
+                <div class="col">
+                    <h3>full_stack_development</h3>
+                    <p>html/css/javascript/react.js/sql/php</p>
+                </div>
+
+                <div class="col">
+                    <h3>app_development</h3>
+                    <p>flutter/java</p>
+                </div>
+
+                <div class="col">
+                    <h3>Machine_Learning_Model_Dev</h3>
+                    <p>python/neural_network/tensor_flow/decision_tree</p>
+                </div>
+
+                <div class="col"> 
+                    <h3>Ui/Ux</h3>
+                    <p> figma</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- experience section end  -->
+
+    <!-- testimonal section start  -->
+    <section id="testimonial-sec"class="testimonial-sec">
+        <div class="testimonial layout">
+            <h3 class="uppercase text-center pd-30"> < _what_drives_my_work > </h3>
+            <div class="testimonial-parent flex space-between align-center">
+                <div class="testimonial-child">
+                    <img src="asset/innovation.jpeg" alt="">
+                    <p>“Innovation is taking two things that exist and putting them together in a new way.“</p>
+                    <div class="review-sec flex space-between">
+                        <div class="icon-sec">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </div>
+                        <div class="name-sec text-center">
+                            <h4>_innovation</h4>
+                            <p class="designation">नवपरिवर्तन</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-child">
+                    <img src="asset/teamwork.jpeg" alt="">
+                    <p>“Innovation is taking two things that exist and putting them together in a new way.“</p>
+                    <div class="review-sec flex space-between">
+                        <div class="icon-sec">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <div class="name-sec text-center">
+                            <h4>_team work</h4>
+                            <p class="designation">समूह</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-child">
+                    <img src="asset/hardwork.png" alt="">
+                    <p>“I learned the value of hard work by working hard.”</p>
+                    <div class="review-sec flex space-between">
+                        <div class="icon-sec">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <div class="name-sec text-center">
+                            <h4>_hard work</h4>
+                            <p class="designation">कड़ी मेहनत</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- testimonal section end -->
+
+    <!-- contact-us section start  -->
+    <section id="contact-us-sec"id="contact-us-sec">
+        <div class="contact-us layout">
+            <h3 class="text-center uppercase pd-30">Contact us</h3>
+            <div class="contact-details flex space-between align-center">
+                <div class="left-sec">
+                    <h5>Bhubaneshwar</h5>
+                    <p>KIIT square<br> Campus 12 <br>Kp15 Bhubaneshwar - 751024</p>
+                </div>
+                <div class="center-sec">
+                    <h5>Contact No.</h5>
+                    <p>Mobile No. +91 7020954209</p>
+                    <h5>Email Id</h5>
+                    <p>ppg5018@gmail.com</p>
+                </div>
+                <div class="right-sec text-center">
+                    <form action="">
+                        Email : <input type="email" id="email-id"> <br>
+                        <button class="btn btn2">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- contact-us section end  -->
+
+    <!-- footer section  -->
+    <footer>
+        <div class="footer-sec layout text-center">
+            <p>Copyright &copy; PG  | All Right Reserved</p>
+        </div>
+    </footer>
+    <script src="index.js"></script>
+    <script>
+        function download_file() {
+	        window.open("asset/about me img.png");
+        }
+
+    </script>
+</body>   
+    </html> 
+
